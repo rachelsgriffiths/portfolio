@@ -1,0 +1,313 @@
+
+/*RESET STYLE*/
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+ul {
+list-style: none;
+}
+
+/*BASE STYLE*/
+body {
+background-color:#F6F8FD;
+font-family: "Maven Pro", sans-serif;
+color: rgba(34, 34, 34);
+}
+
+/*NORMAL STYLE*/
+
+/*TYPOGRAPHY*/
+p {
+font-size: 16px;
+line-height: 22px;
+margin-bottom: 32px;
+font-weight: 400;
+}
+
+h1 {
+font-size: 3.3rem;
+line-height:65px;
+font-weight: 500;
+width: 960px;
+margin-bottom: 40px;
+}
+
+h2 {
+font-size: 2.5rem;
+line-height:60px;
+font-weight: 500;
+margin-bottom: 40px;
+}
+
+h3 {
+font-size: 2rem;
+line-height:45px;
+font-weight: 500;
+}
+
+/*HEADER*/
+
+header {
+position: fixed;
+height: 60px;
+width: 100%;
+display: flex;
+align-items: center;
+padding: 40px 10%;
+justify-content: space-between;
+z-index: 1000;
+background-color:#F6F8FD;}
+
+ul {
+display: flex;
+column-gap:24px;}
+
+.nav-list {
+font-size: 16px;
+font-weight: 500;
+display: flex;
+}
+
+.nav-item {
+color: rgba(34, 34, 34);
+font-style: normal;
+}
+
+.nav-link:hover {
+color: #EDD382;
+transition: all 0.2s;
+}
+
+.icon {
+color: rgba(34, 34, 34);
+}
+
+.icon:hover {
+color: #EDD382;
+transition: all 0.2s;}
+
+.social-links {
+display: flex;
+column-gap: 16px;}
+
+
+/*HERO*/
+main {
+padding-top: 60px;
+}
+
+.hero, .portfolio {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.hero {
+height: calc(100vh - 60px);
+}
+
+.hero-p {
+width: 560px;
+margin-bottom: 40px;
+padding: auto;
+margin: auto;
+}
+
+.highlight {
+font-weight: 300;
+}
+
+.work-btn {
+text-transform: uppercase;
+color: rgba(34, 34, 34);
+padding: 8px 16px;
+border: 1px solid #E0E0E0;
+background-color: white;
+border-radius: 100px;
+margin-bottom: 32px;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.fa-circle{
+color: #4DF200;
+}
+
+/*BUTTONS*/
+
+.button-icon {
+padding-left: 4px;
+}
+
+.yellow-btn {
+text-transform: uppercase;
+font-family: "Maven Pro", sans-serif;
+font-size: 16px;
+font-weight: 500;
+color: rgba(34, 34, 34);
+}
+
+.yellow-btn :hover {
+color: #EDD382; 
+.button-icon {
+padding-left: 16px;}
+}
+
+.btn {
+text-transform: uppercase;
+font-family: "Maven Pro", sans-serif;
+font-size: 16px;
+font-weight: 500;
+color: rgba(34, 34, 34);
+}
+
+.green {
+color: #676D59;}
+
+.light-green {
+color: #A9C2A9;}
+
+.brown {
+color: #9C7E61;}
+
+.btn:hover {
+.button-icon {
+padding-left: 16px;}
+}
+
+/*PORTFOLIO SECTION*/
+.project {
+border-top: solid rgba(34, 34, 34, 25%);
+width: 100%;
+}
+
+.project-content, .contact {
+width: 784px;
+margin: auto;}
+
+.project-content {
+padding-top: 40px;
+padding-bottom: 40px;
+}
+
+.website {
+height: 480;
+border-radius: 15px;
+margin-bottom: 32px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/*EXPERIENCE SECTION*/
+
+.skills {
+display:flex;
+justify-content: space-between;
+padding-left: 150px;
+padding-right: 150px;
+padding-bottom: 40px;
+height: auto;
+background-color: #EDD382;
+}
+
+.skills-header {
+padding-top: 80px;
+position: sticky;
+align-self: flex-start;
+top: 0;
+z-index: 100;
+}
+
+.skills1 {
+padding-top: 52px;
+}
+
+.skills-content {
+width: 50%;
+}
+
+.content-wrap > h3 {
+padding-bottom: 16px;
+}
+
+.my-skills {
+display: flex;
+justify-content: flex-start;
+flex-wrap: wrap;
+}
+
+.skills-bubble {
+color: rgba(34, 34, 34);
+padding: 4px 16px;
+background-color: white;
+border-radius: 100px;
+margin-bottom: 16px;
+margin-right: 16px;
+}
+
+.content-wrap {
+border-bottom: solid rgba(34, 34, 34, 25%);
+padding-top: 40px;
+padding-bottom: 8px;
+}
+
+.software {
+padding-top:40px;
+h3 {padding-bottom: 16px;}}
+
+.soft-logo {
+padding-right: 24px;}
+
+/*CONTACT SECTION*/
+.contact {
+margin: auto;
+text-align: center;
+padding: 56px;
+}
+
+.selfie {
+height: 200px;
+ border-radius: 50px;
+ margin-bottom: 32px;
+}
+
+/*FOOTER*/
+.footer-logo {
+padding-bottom:32px;
+}
+
+footer {
+padding: 40px 10%;
+background-color: #EDD382;
+height: 300px;
+}
+
+.footer-bar {
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+gap: 264px;
+}
+
+.copyright {
+display: flex;
+justify-content: center;}
+
+.white:hover {
+color: white;
+}
+
+
+
+
+
+
