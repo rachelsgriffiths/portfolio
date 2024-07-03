@@ -1,164 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Rachel Griffiths</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head>	
+    <title>Rachel griffiths portfolio</title>
+    <link rel="icon" type="image/x-icon" href="rg.svg">
+    <meta name="description" content="Rachel Griffiths is a freelance website designer">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles2.css">
+
+</head>
 <body>
-	<header>
-	<img src="logo.svg", alt="logo", class="logo-img">
-	<nav>
-		<ul>
-			<li class="nav-item"><a target="_blank" href="about", class="nav-link">About</a></li>
-			<li class="nav-item"><a target="_blank" href="projects", class="nav-link">Portfolio</a></li>
-			<li class="nav-item"><a target="_blank" href="experience", class="nav-link">Experience</a></li>
-			<li class="nav-item"><a target="_blank" href="contact", class="nav-link">Contact</a></li>
-			</ul>
-			</nav>		
-	<div class="social-links">
-	<a href="www.linkedin.com/in/rachel-s-griffiths" target=”_blank”> <i class="fa-brands fa-linkedin fa-lg icon"> </i></a>
-		<a href="mailto:rsgriffiths@outlook.com" target=”_blank”> <i class="fa-solid fa-envelope fa-lg icon"></i></a> 
-
-	</div>
+<!-- Nav --->
+<header>
+<nav class="navbar navbar-expand pt-3 pb-3 d-flex align-items-center justify-content-space-between" id="navbar-example2">
+  <div class="container-fluid">  
+  <img src="logo.svg", alt="logo", class="logo-img img-fluid">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link text-black active" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="d-none d-lg-block">
+          <a href="https://www.linkedin.com/in/rachel-s-griffiths/" target=”_blank”>
+            <i class="fa-brands fa-linkedin fa-lg icon pe-3"></i></a>
+          <a href="mailto:rsgriffiths@outlook.com" target=”_blank”>
+            <i class="fa-regular fa-envelope fa-lg icon"></i></a>
+        </div>
+      </div>    
+  </nav>
 </header>
+<!-- Add in this line to enable scrollspy -->
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+<!-- Hero -->
 <main>
-	<div class="hero" id="about">
-		<div class="hero-content">
-		<button class="work-btn"><i class="fa-solid fa-circle fa-xs"></i> Looking for work</button>
-		<div><h1>&#128075&#127996; <span class="highlight">I'm Rachel</span>
-		<br>Aspiring UX/UI designer, with a love for creating clean & functional designs</h1></div>
-		<div class="hero-p">
-			<p>With my background in psychology and social research, I can bring a unique, 
-		user-focused, problem-solving approach to design, creating digital experiences 
-		that truly meet user needs.</p></div>
-		<div class="yellow-btn">
-			<a rel="noopener" target="_blank" href="projects">see my portfolio
-			<span class="button-icon"><i class="fa-solid fa-arrow-right arrow-icon"></i></span></a>
-			</div>
-		</center>
-		</div>
-		</div>
-		</main>	
-	<div class="portfolio">	
-	<h2>Projects</h2>
-	<div class="project">
-		<div class="project-content">
-	<h3>Harry's Advantures</h3>
-	<p><small>Design | WordPress | Portfolio</small></p>
-	<img src="HarrysAd.jpg" alt="Screenshot of Harry's website" class="website">
-	<p>Website re-design to increase Harry’s ability to find work through 
-	his website by showcasing his portfolio of content creation and track 
-	record of successful collaborations evidenced through testimonials.</p><br>
-	<div class="btn green">
-		<a href="#">Visit website
-		<span class="button-icon"><i class="fa-solid fa-arrow-right arrow-icon"></i></span></a></div>
-	</div>
-	</div>
-<div class="project">
-		<div class="project-content">
-	<h3>Euroutes</h3>
-	<p><small>Design | Shopify | ECommerce</small></p>
-	<img src="Euroutes.jpg" alt="Screenshot of Euroutes website" class="website">
-	<p>I designed and built an eCommerce website on Shopify for Euroutes, 
-	a start-up that sells digital travel guides. The brief was a simple website 
-	that was clear and enticed customers to purchase products.</p><br>
-	<div class="btn light-green">
-		<a href="#">Visit website
-		<span class="button-icon"><i class="fa-solid fa-arrow-right arrow-icon"></i></span></a></div>
-	</div>
-	</div>
-	<div class="project" id="projects">
-	<div class="project-content">
-	<h3>The Apple Shed</h3>
-	<p><small>Design | Figma Prototype</small></p>
-		<img src="Shed.jpg" alt="Screenshot of The Apple Shed website" class="website">
-	<p>I created a website prototype for a local holiday accommodation on Airbnb. 
-	Many people choose to move their listings off Airbnb due to the commission that is taken. 
-	The ultimate aim was to create a website where people can view the outbuilding and 
-	book the accommodation.</p><br>
-	<div class="btn brown">
-		<a href="#">Visit website
-		<span class="button-icon"><i class="fa-solid fa-arrow-right arrow-icon"></i></span></a></div>
-	</div>
-	</div>
-	</div>
-<div class ="skills" id="experience">
-	<div class="skills-header"><h2>Skills and experience</h2></div>
-	<div class="skills-content skills1">
-		<div class="content-wrap">
-		<h3>Skills</h3>
-		<div class="my-skills">
-			<p><div class="skills-bubble">Visual design</div>
-			<div class="skills-bubble">Wireframe</div>
-			<div class="skills-bubble">Prototype</div>
-			<div class="skills-bubble">Research methodology</div>
-			<div class="skills-bubble">Data analytics</div>
-			<div class="skills-bubble">Stakeholder engagement</div>
-			<div class="skills-bubble">Collaboration</div>
-			<div class="skills-bubble">Programming</div></p></div></div>
-		<div class="content-wrap">
-		<h3>Education</h3>
-		<p>I completed the Bath Spa University ClickStart Digital Skills course, 
-		which covered digital marketing, UI/UX design, and web development. During the course, 
-		I gained experience search engine optimisation, creating wireframes and prototypes in Figma, 
-		and developing websites with HTML and CSS, which I have used to develop the website you are viewing.</p>
-		
-		<p>In addition to this, I completed several online tutorials and engaged in hands-on 
-		learning to further enhance my design skills.</p></div>
-		<div class="content-wrap">
-		<h3>Professional experience</h3>
-		<p>I have three years of experience as a social researcher, during which I have developed 
-		a wide range of research skills. Including, but not limited to, designing user surveys, 
-		collecting user requirements, usability testing, data analysis and presenting research outcomes.</p>
-		 
-		<p>I have experience utilising programming software such as Python and SQL for data analysis. 
-		Through this I am familiar with the process of testing and debugging code, 
-		which has honed my problem-solving abilities and attention to detail.</p></div>
-		<div class="software">
-		<h3>Software</h3>
-		<i class="fa-brands fa-figma fa-lg soft-logo"></i>
-		<i class="fa-brands fa-webflow fa-lg soft-logo"></i>
-		<i class="fa-brands fa-html5 fa-lg soft-logo"></i>
-		<i class="fa-brands fa-css3-alt fa-lg soft-logo"></i>
-		<i class="fa-brands fa-python fa-lg soft-logo"></i>
-		<i class="fa-brands fa-github fa-lg soft-logo"></i></div>
-		</div>
-		</div>
-		<div class="contact" id="contact">
-			<img src="me.jpeg" alt="photo of me" class="selfie">
-			<h2>&#x1F469;&#x200D;&#x1F4BB; I'm looking for a role to kickstart my UX/UI design career</h2>
-			<p>I am transitioning into a career in web design and, while I do not 
-			yet have industry experience, I am a dedicated and quick learner. 
-			I highly value hands-on experience and am eager to learn from experienced 
-			peers to develop my skills and contribute to digital experiences effectively.</p>
-			<div class="btn">
-				<a href="mailto:rsgriffiths@outlook.com">Contact me
-				<span class="button-icon"><i class="fa-solid fa-arrow-right arrow-icon"></i></a></span></div>
-				</div>		
-<footer>	
-<div class="footer-bar">
-	<div class="left-footer">
-	<img src="logo.svg", alt="logo", class="footer-logo"><br>
-	<p><strong>Email:</strong> rsgriffiths@outlook.com</p>
-	<p></p><strong>Location:</strong> Gloucestershire, England<br>Open to work &#127757;</p></div>	
-<div class="right-footer">
-	<p><strong>Follow me</strong></p>
-	<div class="social-links">
-	<a href="www.linkedin.com/in/rachel-s-griffiths" target=”_blank”> <i class="fa-brands fa-linkedin fa-lg icon white"> </i> </a>
-			<a href="mailto:rsgriffiths@outlook.com" target=”_blank”> <i class="fa-solid fa-envelope fa-lg icon white"></i></a> 
-</div>
-</div>
-</div>
-<div class="copyright"><p><small>© Copyright 2024 Rachel Griffiths</small></p></div>
-	</footer>	
-	</body>
-	</html>
-	
-	
+  <div id="about" class="hero-content">
+    <div class="container">
+      <div class="row d-flex align-items-center text-center ">
+        <div class="col">
+          <div class="work-looking pt-5 pb-5 justify-content-center">
+            <img src="me.jpeg" class="img-fluid tiny-selfie" alt="selfie of rachel" loading="lazy">
+            <p class="work-btn"><i class="fa-solid fa-circle fa-xs pe-1"></i>looking for work</p>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex align-items-center justify-content-center pb-5 text-center text-lg-start">
+        <div class="col-sm-12 col-lg-8 g-lg-0 mb-3">
+          <h1>&#128075&#127996; <span class="highlight">I'm Rachel</span>
+            <br>Aspiring UX/UI designer, creating clean & functional designs
+          </h1>
+          <div>
+            <a class="btn yellow-btn" href="#portfolio">see my portfolio<span class="button-icon"><i
+                  class="fa-solid fa-arrow-right arrow-icon"></i></span></a>
+          </div>
+        </div>
+        <div class="container col-sm-12 col-lg-4 pb-3 pt-3">
+          <p>
+            Hi, I'm Rachel! During my three years as a social researcher in the civil service, I discovered a passion and
+            knack for coding. After a career break travelling around Europe, I decided to embark on a new adventure: enhancing 
+            my tech skills and combining coding with creativity in the world of UI/UX design.</p>
 
+          <p>With a background in psychology and social research, I can bring a unique,
+            human-centred, problem-solving approach to design, creating digital experiences
+            that truly meet business and user needs. Let's create something together!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- Portfolio -->
+<section>
+  <div class="portfolio pt-2 pb-5" id="portfolio">
+    <h2 class="text-center">Projects</h2>
+    <div class="d-flex flex-column text-center mg-auto">
+      <div class="project">
+        <div class="container text-center project-content col-lg-6 pb-5">
+          <h3 class="pt-4">Harry's Advantures</h3>
+          <p><small>Design | Web Development | Portfolio</small></p>
+          <img src="harrys-advantures-screenshot.jpg" alt="Screenshot of Harry's website" class="website img-fluid rounded-4">
+          <p class="pt-4">A complete website re-design for content creator Harry to transform his current blog
+            into a professional portfolio. The new website better suits his business needs, showcases his work
+            and will help Harry secure more collaborations in the future by having a dedicated
+            place to highlight his experience.</p>
+          <div class="btn green">
+            <a href="https://rachelsgriffiths.github.io/harrysadvantures/">Visit website
+              <span class="button-icon"><i class="fa-solid fa-arrow-right arrow-icon"></i></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="container text-center project-content col-lg-6 pb-5">
+          <h3 class="pt-4">Euroutes</h3>
+          <p><small>Design | Shopify | ECommerce</small></p>
+          <img src="euroutes-screenshot.jpg" alt="Screenshot of Euroutes website" class="website img-fluid rounded-4">
+          <p class="pt-4">An eCommerce website build on Shopify for a business I co-founded, Euroutes, specialising in travel
+            guides. The goal was to provide a platform to sell products and optimise the layout to enhance trust and boost
+            conversions and sales.
+          </p>
+          <div class=" btn light-green">
+            <a href="https://euroutes.co.uk/">Visit website
+              <span class="button-icon"><i class="fa-solid fa-arrow-right arrow-icon"></i></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="container text-center project-content col-lg-6 pb-5">
+          <h3 class="pt-4">The Apple Shed</h3>
+          <p><small>Design | Figma Prototype</small></p>
+          <img src="apple-shed-screenshot.jpg" alt="Screenshot of The Apple Shed website" class="website img-fluid rounded-4 pb-2">
+          <p class="pt-4">A hypothetical website prototype for a local holiday accommodation on Airbnb, designed to
+            offer a commission-free booking platform.
+            The aim was to design a website that would increase conversions and provide a direct and cost-effective
+            space for guests to book their stays.</p>
+          <div class=" btn brown">
+            <a
+              href="https://www.figma.com/design/tfaGNvevg9196SvucKoxwn/TheAppleShed?node-id=13-99&t=T5sKvgZuTBWV3yfv-1">Visit
+              prototype
+              <span class="button-icon"><i class="fa-solid fa-arrow-right arrow-icon"></i></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Skills and experience -->
+<section class="skills-and-experience" id="experience">
+  <div class="skills-container text-center text-lg-start">
+    <div class="row">
+      <div class="col-sm-12 col-lg-6">
+        <div class="skills-header">
+          <h2>Skills and experience</h2>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-6">
+        <div class="content-wrap skills pt-0 d-inline-block">
+          <h3 class="pb-3 skills">Skills</h3>
+          <div>
+            <p>
+            <div class="skills-bubble rounded-5 me-3 mb-3 d-inline-flex">Visual design</div>
+            <div class="skills-bubble rounded-5 me-3 mb-3 d-inline-flex">Wireframe</div>
+            <div class="skills-bubble rounded-5 me-3 mb-3 d-inline-flex">Prototype</div>
+            <div class="skills-bubble rounded-5 me-3 mb-3 d-inline-flex">Research methodology</div>
+            <div class="skills-bubble rounded-5 me-3 mb-3 d-inline-flex">Data analytics</div>
+            <div class="skills-bubble rounded-5 me-3 mb-3 d-inline-flex">Stakeholder engagement</div>
+            <div class="skills-bubble rounded-5 me-3 mb-3 d-inline-flex">Collaboration</div>
+            <div class="skills-bubble rounded-5 me-3 mb-3 d-inline-flex">Programming</div>
+            </p>
+          </div>
+        </div>
+      <div class="content-wrap">
+        <h3 class="pb-3">Education</h3>
+        <p>I completed the Bath Spa University ClickStart Digital Skills course,
+          which covered digital marketing, UI/UX design, and web development. During the course,
+          I gained experience search engine optimisation, creating wireframes and prototypes in Figma,
+          and developing websites with HTML, CSS and bootstrap, which I have used to develop the website you are
+          viewing.</p>
+
+        <p>In addition to this, I completed several online tutorials and engaged in hands-on
+          learning to further enhance my design skills.</p>
+      </div>
+      <div class="content-wrap">
+        <h3 class="pb-3">Professional experience</h3>
+        <p>I have three years of experience as a social researcher, during which I have developed
+          a wide range of research skills. Including, but not limited to, designing user surveys,
+          collecting user requirements, usability testing, data analysis and presenting research outcomes.</p>
+
+        <p>I have experience utilising programming software such as Python and SQL for data analysis.
+          Through this I am familiar with the process of testing and debugging code,
+          which has honed my problem-solving abilities and attention to detail.</p>
+      </div>
+      <div class="software">
+        <h3 class="pb-3">Software</h3>
+        <i class="fa-brands fa-figma fa-lg soft-logo"></i>
+        <i class="fa-brands fa-webflow fa-lg soft-logo"></i>
+        <i class="fa-brands fa-html5 fa-lg soft-logo"></i>
+        <i class="fa-brands fa-css3-alt fa-lg soft-logo"></i>
+        <i class="fa-brands fa-bootstrap fa-lg soft-logo"></i>
+        <i class="fa-brands fa-python fa-lg soft-logo"></i>
+        <i class="fa-brands fa-github fa-lg soft-logo"></i>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+<!-- Contact -->
+<section id="contact">
+  <div class="contact-container text-center d-flex flex-column mg-auto justify-content-center 
+  align-items-center pt-5 pb-5 ">
+    <img src="me.jpeg" alt="photo of me" class="img-fluid selfie rounded-5 mb-4">
+    <h2>&#x1F469;&#x200D;&#x1F4BB; I'm looking for a role to kickstart my UX/UI design career</h2>
+    <p>I am transitioning into a career in UX/UI design and, while I may not 
+  have industry experience yet, I am a dedicated and quick learner. 
+    I highly value hands-on experience and am eager to learn from experienced 
+    peers to develop my skills and contribute to digital experiences effectively.</p>
+    <div class="btn yellow-btn">
+      <a href="mailto:rsgriffiths@outlook.com">Contact me
+      <span class="button-icon"><i class="fa-solid fa-arrow-right arrow-icon"></i></a></span></div>
+</div>
+    </section>
+<!-- Footer -->
+<footer class="pt-5 pb-1 text-center text-lg-start">
+  <div class="footer-desktop">
+  <div class="container pb-5">
+    <div class="row">
+      <div class="col-sm-12 col-lg-6">
+        <img src="logo.svg" , alt="logo" , class="footer-logo pb-4"><br>
+      </div>
+      <div class="col-sm-12 col-lg-6 pb-4">
+        <p class="mb-2"><strong>Follow me</strong></p>
+        <a href="www.linkedin.com/in/rachel-s-griffiths" target=”_blank”> <i
+            class="fa-brands fa-linkedin fa-lg footer-icon white pe-3"> </i> </a>
+        <a href="mailto:rsgriffiths@outlook.com" target=”_blank”> <i
+            class="fa-regular fa-envelope fa-lg footer-icon white"></i></a>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-lg-6 pb-1">
+          <p><strong>Email:</strong> rsgriffiths@outlook.com</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-lg-6 pb-1">
+          <p><strong>Location:</strong> Gloucestershire, England<br>Open to work &#127757;</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container bottom-text text-center justify-content-center w-75">
+    <p><small>Designed in <a href="https://www.figma.com/"><u>Figma</u></a> and developed in
+        <a href="https://code.visualstudio.com/"><u>Visual Studio Code</u></a> by myself.
+        Built with HTML, CSS and <a href="https://getbootstrap.com/"><u>Bootstrap</u></a>.
+        All text is in the Maven Pro typeface.</small></p>
+    <p><small>© Copyright 2024 Rachel Griffiths</small></p>
+  </div>
+</div>
+</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

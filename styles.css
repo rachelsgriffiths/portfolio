@@ -1,313 +1,327 @@
-
 /*RESET STYLE*/
-
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
 a {
-color: inherit;
-text-decoration: none;
-}
-
-ul {
-list-style: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 /*BASE STYLE*/
 body {
-background-color:#F6F8FD;
-font-family: "Maven Pro", sans-serif;
-color: rgba(34, 34, 34);
+    background-color: #F6F8FD;
+    font-family: "Maven Pro", sans-serif;
+    color: rgba(34, 34, 34);
+    
 }
 
-/*NORMAL STYLE*/
+.scrollspy-example {
+    position: relative;
+}
 
-/*TYPOGRAPHY*/
+    /*TYPOGRAPHY*/
 p {
-font-size: 16px;
-line-height: 22px;
-margin-bottom: 32px;
-font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 32px;
+    font-weight: 400;
 }
 
 h1 {
-font-size: 3.3rem;
-line-height:65px;
-font-weight: 500;
-width: 960px;
-margin-bottom: 40px;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    font-weight: 500;
+    margin-bottom: 40px;
 }
 
 h2 {
-font-size: 2.5rem;
-line-height:60px;
-font-weight: 500;
-margin-bottom: 40px;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 40px;
 }
 
 h3 {
-font-size: 2rem;
-line-height:45px;
-font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    font-weight: 500;
 }
 
-/*HEADER*/
+.link {
+    color: white;
+}
 
+@media only screen and (min-width: 768px) {
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    h1 {
+        font-size: 3.3rem;
+        line-height: 3.8rem;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+        line-height: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+    }
+}
+
+ /*HEADER*/
+    
 header {
-position: fixed;
-height: 60px;
-width: 100%;
-display: flex;
-align-items: center;
-padding: 40px 10%;
-justify-content: space-between;
-z-index: 1000;
-background-color:#F6F8FD;}
-
-ul {
-display: flex;
-column-gap:24px;}
-
-.nav-list {
-font-size: 16px;
-font-weight: 500;
-display: flex;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    z-index: 1000;
+    background-color: #F6F8FD;
 }
 
-.nav-item {
-color: rgba(34, 34, 34);
-font-style: normal;
+.logo-img {
+    height: 30px;
 }
 
-.nav-link:hover {
-color: #EDD382;
-transition: all 0.2s;
+nav {
+    gap: 2px !important;
+}
+
+.nav-link {
+    color: rgba(34, 34, 34) !important;
+    font-size: 10px !important;
+  }
+
+  .nav-link.active {
+    background-color: #EDD382 !important;
+    color: rgba(34, 34, 34) !important;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .logo-img {
+        height: 50px;
+    }
+    .nav-link {
+        font-size: 16px !important;
+      } 
 }
 
 .icon {
-color: rgba(34, 34, 34);
+    color: rgba(34, 34, 34);
 }
 
 .icon:hover {
-color: #EDD382;
-transition: all 0.2s;}
-
-.social-links {
-display: flex;
-column-gap: 16px;}
-
+    color: #EDD382;
+    transition: all 0.2s;
+}
 
 /*HERO*/
+
 main {
-padding-top: 60px;
-}
-
-.hero, .portfolio {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
-}
-
-.hero {
-height: calc(100vh - 60px);
-}
-
-.hero-p {
-width: 560px;
-margin-bottom: 40px;
-padding: auto;
-margin: auto;
+    padding-top: 70px;
 }
 
 .highlight {
-font-weight: 300;
+    font-weight: 300;
+}
+
+.tiny-selfie {
+    height: 4.5rem;
+    border-radius: 50%;
+}
+
+.work-looking {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
 .work-btn {
-text-transform: uppercase;
-color: rgba(34, 34, 34);
-padding: 8px 16px;
-border: 1px solid #E0E0E0;
-background-color: white;
-border-radius: 100px;
-margin-bottom: 32px;
-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-transform: uppercase;
+    color: rgba(34, 34, 34);
+    padding: 4px 16px;
+    border: 1px solid #E0E0E0;
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    .fa-circle {
+        color: #4DF200;
+    }
 }
 
-.fa-circle{
-color: #4DF200;
-}
-
-/*BUTTONS*/
-
+/*BUTTONS*/  
 .button-icon {
-padding-left: 4px;
-}
-
-.yellow-btn {
-text-transform: uppercase;
-font-family: "Maven Pro", sans-serif;
-font-size: 16px;
-font-weight: 500;
-color: rgba(34, 34, 34);
-}
-
-.yellow-btn :hover {
-color: #EDD382; 
-.button-icon {
-padding-left: 16px;}
+    padding-left: 4px;
 }
 
 .btn {
-text-transform: uppercase;
-font-family: "Maven Pro", sans-serif;
-font-size: 16px;
-font-weight: 500;
-color: rgba(34, 34, 34);
+    text-transform: uppercase;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(34, 34, 34);
+    padding:0px;
+}
+
+.btn:hover {
+    .button-icon {
+        padding-left: 16px;
+    }
+}
+
+.yellow-btn:hover {
+    color: #C3AD6B;
+}
+
+.yellow-btn:focus {
+    outline: none;
+    padding: 16px;
 }
 
 .green {
-color: #676D59;}
+    color: #676D59;
+}
 
 .light-green {
-color: #A9C2A9;}
+    color: #A9C2A9;
+}
 
 .brown {
-color: #9C7E61;}
-
-.btn:hover {
-.button-icon {
-padding-left: 16px;}
+    color: #9C7E61;
 }
 
-/*PORTFOLIO SECTION*/
+/*PROJECT*/  
+
 .project {
-border-top: solid rgba(34, 34, 34, 25%);
-width: 100%;
-}
-
-.project-content, .contact {
-width: 784px;
-margin: auto;}
-
-.project-content {
-padding-top: 40px;
-padding-bottom: 40px;
+    border-top: solid rgba(34, 34, 34, 25%);
 }
 
 .website {
-height: 480;
-border-radius: 15px;
-margin-bottom: 32px;
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /*EXPERIENCE SECTION*/
-
-.skills {
-display:flex;
-justify-content: space-between;
-padding-left: 150px;
-padding-right: 150px;
-padding-bottom: 40px;
-height: auto;
-background-color: #EDD382;
+    
+.skills-and-experience {
+    padding-bottom: 40px;
+    height: auto;
+    background-color: #EDD382;
 }
 
 .skills-header {
-padding-top: 80px;
-position: sticky;
-align-self: flex-start;
-top: 0;
-z-index: 100;
-}
-
-.skills1 {
-padding-top: 52px;
-}
-
-.skills-content {
-width: 50%;
-}
-
-.content-wrap > h3 {
-padding-bottom: 16px;
-}
-
-.my-skills {
-display: flex;
-justify-content: flex-start;
-flex-wrap: wrap;
+    padding-top: 80px;
 }
 
 .skills-bubble {
-color: rgba(34, 34, 34);
-padding: 4px 16px;
-background-color: white;
-border-radius: 100px;
-margin-bottom: 16px;
-margin-right: 16px;
+    color: rgba(34, 34, 34);
+    padding: 4px 16px;
+    background-color: white;
 }
 
 .content-wrap {
-border-bottom: solid rgba(34, 34, 34, 25%);
-padding-top: 40px;
-padding-bottom: 8px;
+    border-bottom: solid rgba(34, 34, 34, 25%);
+    padding-top: 40px;
+    padding-bottom: 8px;
 }
 
 .software {
-padding-top:40px;
-h3 {padding-bottom: 16px;}}
+    padding-top: 40px;
+
+    h3 {
+        padding-bottom: 16px;
+    }
+}
 
 .soft-logo {
-padding-right: 24px;}
-
-/*CONTACT SECTION*/
-.contact {
-margin: auto;
-text-align: center;
-padding: 56px;
+    padding-right: 24px;
 }
 
+@media only screen and (min-width: 768px) {
+
+    .skills-and-experience {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .skills {
+        padding-top: 80px;
+    }
+
+    .skills-header {
+        position: sticky;
+        align-self: flex-start;
+        top: 0;
+        z-index: 100;
+    }
+
+}
+
+/* CONTACT */ 
 .selfie {
-height: 200px;
- border-radius: 50px;
- margin-bottom: 32px;
+    max-width: 10rem;
 }
 
-/*FOOTER*/
-.footer-logo {
-padding-bottom:32px;
-}
 
+
+
+/* FOOTER */ 
 footer {
-padding: 40px 10%;
-background-color: #EDD382;
-height: 300px;
+    background-color: #EDD382;
 }
 
-.footer-bar {
-display: flex;
-flex-direction: row;
-justify-content: flex-start;
-gap: 264px;
+@media only screen and (min-width: 768px) {
+    .footer-desktop {
+        margin-left: 138px;
+        margin-right: 138px;
+    }
 }
 
-.copyright {
-display: flex;
-justify-content: center;}
-
-.white:hover {
-color: white;
+.footer-icon {
+    color: rgba(34, 34, 34);
 }
 
+.footer-icon:hover {
+    color: white;
+    transition: all 0.2s;
+}
 
+/* SCREEN SIZE */ 
 
+@media only screen and (max-width: 768px) {
+    .hero-content, .project, .skills-container,
+    .contact-container {
+        margin-left: 16px;
+        margin-right:16px;
+    }
+}
 
+@media only screen and (min-width: 768px) {
 
+    .hero-content,
+    .navbar {
+        margin-left: 138px;
+        margin-right: 138px;
+    }
+
+    .hero-content {
+        padding-top: 32px;
+    }
+
+    .hero-p {
+        width: 80%;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .contact-container {
+        max-width: 50%;
+        margin:auto;}
+
+}
 
