@@ -182,15 +182,15 @@ main {
     padding: 16px;
 }
 
-.green {
+.green:hover {
     color: #676D59;
 }
 
-.light-green {
+.light-green:hover {
     color: #A9C2A9;
 }
 
-.brown {
+.brown:hover {
     color: #9C7E61;
 }
 
