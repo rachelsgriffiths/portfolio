@@ -209,7 +209,7 @@ main {
 .skills-and-experience {
     padding-bottom: 40px;
     height: auto;
-    background-color: #EDD382;
+    //*background-color: #EDD382;*/
 }
 
 .skills-header {
