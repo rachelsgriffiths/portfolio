@@ -65,8 +65,8 @@ h3 {
     }
 
     h3 {
-        font-size: 2.5rem;
-        line-height: 2.8rem;
+        font-size: 2.3rem;
+        line-height: 2.5rem;
     }
 }
 
@@ -94,10 +94,7 @@ nav {
   }
 
   .nav-link.active {
-    background-color: #EDD382 !important;
-    color: rgba(34, 34, 34) !important;
-    padding-left: 8px;
-    padding-right: 8px;
+    color: #A4A4A4 !important;
   }
 
   @media only screen and (min-width: 768px) {
@@ -118,6 +115,22 @@ nav {
     transition: all 0.2s;
 }
 
+.block-btn {
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border: 1px solid #EDD382;
+    background-color: #EDD382;
+    border-radius: 100px;
+}
+
+.block-btn:hover {
+    background-color: #C3AD6B;
+    border: 1px solid #C3AD6B;
+
+
+}
+
+
 /*HERO*/
 
 main {
@@ -126,11 +139,6 @@ main {
 
 .highlight {
     font-weight: 300;
-}
-
-.tiny-selfie {
-    height: 4.5rem;
-    border-radius: 50%;
 }
 
 .work-looking {
@@ -142,15 +150,21 @@ main {
 .work-btn {
     text-transform: uppercase;
     color: rgba(34, 34, 34);
-    padding: 4px 16px;
-    border: 1px solid #E0E0E0;
-    background-color: white;
-    border-radius: 100px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
     .fa-circle {
         color: #4DF200;
     }
+}
+
+.selfie {
+    max-width: 15rem;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.selfie:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
 }
 
 /*BUTTONS*/  
@@ -194,9 +208,9 @@ main {
     color: #9C7E61;
 }
 
-/*PROJECT*/  
+/*PROJECT */
 
-.project {
+.portfolio {
     border-top: solid rgba(34, 34, 34, 25%);
 }
 
@@ -223,7 +237,7 @@ main {
 }
 
 .content-wrap {
-    border-bottom: solid rgba(34, 34, 34, 25%);
+    /*border-bottom: solid rgba(34, 34, 34, 25%);*/
     padding-top: 40px;
     padding-bottom: 8px;
 }
@@ -242,7 +256,7 @@ main {
 
 @media only screen and (min-width: 768px) {
 
-    .skills-and-experience {
+    .skills-and-experience, .portfolio {
         padding-left: 150px;
         padding-right: 150px;
     }
@@ -261,15 +275,17 @@ main {
 }
 
 /* CONTACT */ 
-.selfie {
-    max-width: 10rem;
+
+.contact-container {
+    border-bottom: solid rgba(34, 34, 34, 25%);
 }
 
 
 
 
+
 /* FOOTER */ 
-footer {
+footer, .contact {
     background-color: #EDD382;
 }
 
