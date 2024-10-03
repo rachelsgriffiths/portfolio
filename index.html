@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Rachel griffiths portfolio</title>
+    <title>Rachel Griffiths</title>
     <link rel="icon" type="image/x-icon" href="rg.svg">
     <meta name="description" content="Rachel Griffiths is a freelance website designer">
     <meta charset="utf-8">
@@ -21,25 +21,30 @@
 <nav class="navbar navbar-expand pt-3 pb-3 d-flex align-items-center justify-content-space-between" id="navbar-example2">
   <div class="container-fluid">  
   <img src="logo.svg", alt="logo", class="logo-img img-fluid">
-        <ul class="nav nav-pills">
+        <ul class="nav">
           <li class="nav-item">
             <a class="nav-link text-black active" href="#about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-black" href="#portfolio">Portfolio</a>
-          </li>
+          </li><!--
           <li class="nav-item">
             <a class="nav-link text-black" href="#experience">Experience</a>
-          </li>
+          </li>-->
           <li class="nav-item">
             <a class="nav-link text-black" href="#contact">Contact</a>
           </li>
         </ul>
         <div class="d-none d-lg-block">
-          <a href="https://www.linkedin.com/in/rachel-s-griffiths/" aria-label="Link to Rachel's linked in" target=”_blank”>
+
+            <a class="block-btn" href="mailto:rsgriffiths@outlook.com"><span class="para"><b>let's chat</b></span>
+              <span class="button-icon"><i class="fa-solid fa-arrow-right arrow-icon"></i></span>
+            </a>
+
+                 <!--<a href="https://www.linkedin.com/in/rachel-s-griffiths/" aria-label="Link to Rachel's linked in" target=”_blank”>
             <i class="fa-brands fa-linkedin fa-lg icon pe-3"></i></a>
           <a href="mailto:rsgriffiths@outlook.com" aria-label="Link to email Rachel" target=”_blank”>
-            <i class="fa-regular fa-envelope fa-lg icon"></i></a>
+            <i class="fa-regular fa-envelope fa-lg icon"></i></a>--> 
         </div>
       </div>    
   </nav>
@@ -50,18 +55,10 @@
 <main>
   <div id="about" class="hero-content">
     <div class="container">
-      <div class="row d-flex align-items-center">
-        <div class="col">
-          <div class="work-looking pt-5 pb-5 justify-content-center">
-            <img src="me.webp" class="img-fluid tiny-selfie" alt="selfie of rachel" loading="lazy">
-            <p class="work-btn"><i class="fa-solid fa-circle fa-xs pe-1"></i>available for work</p>
-          </div>
-        </div>
-      </div>
       <div class="row d-flex align-items-center justify-content-center pb-5 text-lg-start">
         <div class="col-sm-12 col-lg-8 g-lg-0 mb-3">
           <h1>&#128075&#127996; <span class="highlight">I'm Rachel</span>
-            <br>Aspiring UX & web designer <br> creating simple & functional designs
+            <br>Freelance web designer<br> creating simple & functional designs
           </h1>
           <div>
             <a class="btn yellow-btn" href="#portfolio">see my portfolio<span class="button-icon"><i
@@ -69,14 +66,16 @@
           </div>
         </div>
         <div class="container col-sm-12 col-lg-4 pb-3 pt-3">
+          <img src="me.webp" alt="photo of me" class="img-fluid selfie rounded-5 mb-4">
+
           <p>
-            Hi, I'm Rachel! With an MSc in Psychology and three years of experience as a social researcher, I have dedicated 
-            much of my time to understanding human behaviour. Now, I've embarked on a new journey, combining my passion for psychology 
-            and research with creativity in the world of UX design.
+            Hello! I’m Rachel, a web designer and small business owner passionate about helping other small businesses enhance 
+            their online presence through impactful websites.
           </p>
 
-          <p>I can bring a unique, human-centered approach to problem-solving, crafting digital experiences that effectively 
-            meet both business and user needs.
+          <p>Before diving into the world of design, I was a researcher and a self-proclaimed data nerd. My work now revolves 
+            more around graphics than numbers, but my evidence-based approach remains at the heart of what I do. Effective websites aren't 
+            just about looking good—it’s about what actually works.
           </p>
         </div>
       </div>
@@ -84,61 +83,102 @@
   </div>
 </main>
 <!-- Portfolio -->
-<section>
-  <div class="portfolio pt-2 pb-5" id="portfolio">
-    <h2 class="text-center">Projects</h2>
-    <div class="d-flex flex-column text-center mg-auto">
-      <div class="project">
-        <div class="container text-center project-content col-lg-6 pb-5">
-          <h3 class="pt-4">Harry's Advantures</h3>
-          <p><small>Design | Web Development | Portfolio</small></p>
-          <img src="harrys-advantures-screenshot.webp" alt="Screenshot of Harry's website" class="website img-fluid rounded-4">
-          <p class="pt-4">A complete website re-design for content creator Harry to transform his current blog
-            into a professional portfolio. The new website better suits his business needs, showcases his work
-            and will help Harry secure more collaborations in the future by having a dedicated
-            place to highlight his experience.</p>
-          <div class="btn green">
-            <a href="https://rachelsgriffiths.github.io/harrysadvantures/">Visit website
-              <span class="button-icon"><i class="fa-solid fa-arrow-right arrow-icon"></i></span></a>
-          </div>
+<section class="portfolio pb-5" id="portfolio">
+  <div class="projects-container text-center text-lg-start">
+    <div class="row">
+      <div class="col-sm-12 col-lg-5">
+        <div class="skills-header">
+          <h2 class="pt-5">Recent work</h2>
         </div>
       </div>
-      <div class="project">
-        <div class="container text-center project-content col-lg-6 pb-5">
-          <h3 class="pt-4">Euroutes</h3>
-          <p><small>Design | Shopify | ECommerce</small></p>
-          <img src="euroutes-screenshot.webp" alt="Screenshot of Euroutes website" class="website img-fluid rounded-4">
-          <p class="pt-4">An eCommerce website build on Shopify for a business I co-founded, Euroutes, specialising in travel
-            guides. The goal was to provide a platform to sell products and optimise the layout to enhance trust and boost
-            conversions and sales.
-          </p>
-          <div class=" btn light-green">
-            <a href="https://euroutes.co.uk/">Visit website
-              <span class="button-icon"><i class="fa-solid fa-arrow-right arrow-icon"></i></span></a>
-          </div>
+      <div class="col-sm-12 col-lg-7 pt-5">
+<div class="content-wrap">
+  <h3 class="pt-4">A complete website redesign for content creator Harry's Advantures</h3>
+  <p><small>Design | Web Development | Portfolio</small></p>
+  <img src="harrysadvantures_mockup.jpg" alt="Screenshot of Harry's website" class="website img-fluid rounded-4">
+  <h4 class="pt-4">The problem:</h4>
+  <div>
+    <p class="pt-2">
+      Originally designed as a personal blog, Harry's previous website didn’t align with his
+      professional goals and was not attracting potential clients for his freelance services.
+    </p>
+    <h4>The solution:</h4>
+    <ul>
+      <li>
+        Complete website redesign with a focus on portfolio images and videos to demonstrate the quality of Harry’s content creation work effectively.
+      </li>
+      <li>Brand logos and testimonials from clients to emphasise social proof, build trust and credibility, making it easier
+        for businesses to recognise his expertise.
+      </li>
+      <li>User-friendly, responsive design prioritised because the website is likely to be viewed on mobile due to the
+        industry.</li>
+      </ul>
+      </div>
+      <div class="btn green">
+        <a href="https://harrysadvantures.com/" target=”_blank”>Visit website
+          <span class="button-icon"><i class="fa-solid fa-arrow-right arrow-icon"></i></span></a>
+      </div>
+      </div>
+      <div class="content-wrap">
+        <h3 class="pt-4">eCommerce Shopify website design for start up Euroutes</h3>
+        <p><small>Design | Shopify | ECommerce</small></p>
+        <img src="euroutes_mockup.jpg" alt="Screenshot of Harry's website" class="website img-fluid rounded-4">
+        <h4 class="pt-4">The problem:</h4>
+        <p class="pt-2">
+          Euroutes, a newly established business specialising in travel guides needed an online platform that could 
+          facilitate both eCommerce transactions and blog content. Ultimately to drive traffic, engage customers, or 
+          convert visitors into buyers.
+        <h4>The solution:</h4>
+        <ul>
+          <li>
+            I developed a Shopify website with a focus on eCommerce functionality, content-driven SEO, and an optimised layout including prominent customer reviews to build trust and boost conversions.
+          <li>Created detailed product pages with high-quality photos and an in-depth "About Us" section to highlight the founders' experience and product quality.
+          </li>
+          <li>Integrated a blog feature for regular content publication to improve SEO and attract organic traffic.</li>
+        </li>
+          </ul>
+        <div class="btn light-green">
+          <a href="https://euroutes.co.uk/" target=”_blank”>Visit website
+            <span class="button-icon"><i class="fa-solid fa-arrow-right arrow-icon"></i></span></a>
         </div>
       </div>
-      <div class="project">
-        <div class="container text-center project-content col-lg-6 pb-5">
-          <h3 class="pt-4">The Apple Shed</h3>
-          <p><small>Design | Figma Prototype</small></p>
-          <img src="apple-shed-screenshot.webp" alt="Screenshot of The Apple Shed website" class="website img-fluid rounded-4 pb-2">
-          <p class="pt-4">A hypothetical website prototype for a local holiday accommodation on Airbnb, designed to
-            offer a commission-free booking platform.
-            The aim was to design a website that would increase conversions and provide a direct and cost-effective
-            space for guests to book their stays.</p>
-          <div class=" btn brown">
-            <a
-              href="https://www.figma.com/design/tfaGNvevg9196SvucKoxwn/TheAppleShed?node-id=13-99&t=T5sKvgZuTBWV3yfv-1">Visit
+            <div class="content-wrap">
+              <h3 class="pt-4">Figma Prototype website design for countryside escape the Apple Shed</h3>
+              <p><small>Design | Web Development | Portfolio</small></p>
+              <img src="appleshed_mockup.jpg" alt="Screenshot of Harry's website"
+                class="website img-fluid rounded-4">
+              <h4 class="pt-4">The problem:</h4>
+              <p class="pt-2">
+              The Apple Shed, an established countryside accommodation listed on Airbnb, could reduce their reliance on third-party booking platforms and 
+              avoid the associated commission fees with a website. The existing reliance on third-party listings limits their ability to fully control the booking process and 
+              maximise revenue.
+              </p>
+              <h4>The solution:</h4>
+              <ul>
+                <li>
+                  I designed a new website prototype using Figma, focusing on highlighting the key benefits and features of the
+                  countryside accommodation.
+                <li>I prioritised an engaging user experience with rich visuals and compelling content to capture the essence of
+                  staying at the property.
+              
+                </li>
+                <li>Integrated a booking system directly into the prototype, giving owners full control over reservations and offering
+                  guests a more direct and personalised booking experience.
+                </li>
+                </li>
+              </ul>
+              <div class="btn brown">
+                <a
+              href="https://www.figma.com/design/tfaGNvevg9196SvucKoxwn/TheAppleShed?node-id=13-99&t=T5sKvgZuTBWV3yfv-1" target=”_blank”>Visit
               prototype
               <span class="button-icon"><i class="fa-solid fa-arrow-right arrow-icon"></i></span></a>
+              </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
 </section>
-<!-- Skills and experience -->
+<!-- Skills and experience 
 <section class="skills-and-experience" id="experience">
   <div class="skills-container text-center text-lg-start">
     <div class="row">
@@ -198,31 +238,29 @@
 
     </div>
   </div>
-</section>
-<!-- Contact
-<section id="contact">
+</section> -->
+<!-- Contact -->
+<section class="contact" id="contact">
   <div class="contact-container text-center d-flex flex-column mg-auto justify-content-center 
-  align-items-center pt-5 pb-5 ">
-    <img src="me.webp" alt="photo of me" class="img-fluid selfie rounded-5 mb-4">
-    <h2>&#x1F469;&#x200D;&#x1F4BB; I'm looking for a role to kickstart my UX/UI design career</h2>
-    <p>I am transitioning into a career in UX/UI design and, while I may not 
-  have industry experience yet, I am a dedicated and quick learner. 
-    I highly value hands-on experience and am eager to learn from experienced 
-    peers to develop my skills and contribute to digital experiences effectively.</p>
+  align-items-center pt-5 pb-5">
+    <!--<img src="me.webp" alt="photo of me" class="img-fluid selfie rounded-5 mb-4">-->
+    <h2>&#x1F469;&#x200D;&#x1F4BB; Let's talk</h2>
+    <p>I am available to work on your web design project.</p>
     <div class="btn yellow-btn">
       <a href="mailto:rsgriffiths@outlook.com">Contact me
       <span class="button-icon"><i class="fa-solid fa-arrow-right arrow-icon"></i></a></span></div>
-</div>
-    </section> -->
+    </div>
+
+    </section> 
 <!-- Footer -->
-<footer class="pt-5 pb-1 text-center text-lg-start">
+<footer class="pt-4 pb-1 text-center text-lg-start">
   <div class="footer-desktop">
-  <div class="container pb-5">
+  <div class="container">
     <div class="row">
       <div class="col-sm-12 col-lg-6">
-        <img src="logo.svg" , alt="logo" , class="footer-logo pb-4"><br>
+        <img src="logo.svg" , alt="logo" , class="footer-logo"><br>
       </div>
-      <div class="col-sm-12 col-lg-6 pb-4">
+      <div class="col-sm-12 col-lg-6">
         <p class="mb-2"><strong>Follow me</strong></p>
         <a href="www.linkedin.com/in/rachel-s-griffiths" aria-label="Link to Rachel's linkedin" target=”_blank”> <i
             class="fa-brands fa-linkedin fa-lg footer-icon white pe-3"> </i> </a>
@@ -230,23 +268,22 @@
             class="fa-regular fa-envelope fa-lg footer-icon white"></i></a>
       </div>
       <div class="row">
-        <div class="col-sm-12 col-lg-6 pb-1">
+        <div class="col-sm-12 col-lg-6 ">
           <p><strong>Email:</strong> rsgriffiths@outlook.com</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-12 col-lg-6 pb-1">
-          <p><strong>Location:</strong> Gloucestershire, England<br>Open to work &#127757;</p>
+        <div class="col-sm-12 col-lg-6">
+          <p><strong>Location:</strong> Gloucestershire, England<br>Open to work &#127757;</div></p>
         </div>
       </div>
     </div>
   </div>
   <div class="container bottom-text text-center justify-content-center w-75">
-    <p><small>Designed in <a href="https://www.figma.com/"><u>Figma</u></a> and developed in
-        <a href="https://code.visualstudio.com/"><u>Visual Studio Code</u></a> by myself.
-        Built with HTML, CSS and <a href="https://getbootstrap.com/"><u>Bootstrap</u></a>.
-        All text is in the Maven Pro typeface.</small></p>
-    <p><small>© Copyright 2024 Rachel Griffiths</small></p>
+    <p><small>Designed in <a href="https://www.figma.com/" target=”_blank”><u>Figma</u></a> and developed in
+        <a href="https://code.visualstudio.com/" target=”_blank”><u>Visual Studio Code</u></a> by myself.
+        Built with HTML, CSS and <a href="https://getbootstrap.com/" target=”_blank”><u>Bootstrap</u></a>.</small></p>
+<p><small>© Copyright 2024 Rachel Griffiths</small></p>
   </div>
 </div>
 </footer>
